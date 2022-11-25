@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  RegisterViewController.swift
 //  Messenger
 //
 //  Created by Pedro Luis Martins Coelho on 21/11/22.
@@ -7,13 +7,11 @@
 
 import UIKit
 
-class ConversationViewController: UIViewController {
+class RegisterViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        view.backgroundColor = .link
     }
-
-
 }
-

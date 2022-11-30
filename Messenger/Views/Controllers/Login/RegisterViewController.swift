@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class RegisterViewController: UIViewController {
 
@@ -17,7 +18,7 @@ class RegisterViewController: UIViewController {
     
     private let imageView: UIImageView = {
         let iv = UIImageView()
-        iv.image = UIImage(systemName: "person")
+        iv.image = UIImage(systemName: "person.circle")
         iv.tintColor = .gray
         iv.contentMode = .scaleAspectFit
         iv.layer.masksToBounds = true
@@ -150,7 +151,21 @@ class RegisterViewController: UIViewController {
             return
         }
         
-        // Firebase Log In
+        // Firebase Register
+        FirebaseAuth.Auth.auth().createUser(withEmail: email, password: password, completion: { [weak self] authResult, error in
+            guard let strongSelf = self else {
+                return
+            }
+            
+            guard let result = authResult, error == nil else {
+                print("Error creating user")
+                return
+            }
+            
+            let user = result.user
+            print("Created User: \(user)")
+            strongSelf.navigationController?.dismiss(animated: true, completion: nil)
+        })
     }
     
     private func alertUserLoginError() {

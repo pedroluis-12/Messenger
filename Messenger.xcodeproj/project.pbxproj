@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		062E16B4FBE588FD2ED64CAA /* Pods_Messenger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CB7FCA95CFAB7C42EB89CAE /* Pods_Messenger.framework */; };
 		AA90B3CD293150CD00085110 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA90B3CC293150CD00085110 /* Extensions.swift */; };
+		AAA332082943FBBE00C58A2F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AAA332072943FBBE00C58A2F /* GoogleService-Info.plist */; };
 		AAD0F1B8292C326C0023CE16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD0F1B7292C326C0023CE16 /* AppDelegate.swift */; };
 		AAD0F1BA292C326C0023CE16 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD0F1B9292C326C0023CE16 /* SceneDelegate.swift */; };
 		AAD0F1BC292C326C0023CE16 /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD0F1BB292C326C0023CE16 /* ConversationViewController.swift */; };
@@ -52,6 +53,7 @@
 		97D7FD84E357C8957114AD9D /* Pods_Messenger_MessengerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Messenger_MessengerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2D9783FDB4F90D16ECFA364 /* Pods-Messenger-MessengerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Messenger-MessengerUITests.release.xcconfig"; path = "Target Support Files/Pods-Messenger-MessengerUITests/Pods-Messenger-MessengerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		AA90B3CC293150CD00085110 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		AAA332072943FBBE00C58A2F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AAD0F1B4292C326C0023CE16 /* Messenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Messenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAD0F1B7292C326C0023CE16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAD0F1B9292C326C0023CE16 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 		AAD0F1B6292C326C0023CE16 /* Messenger */ = {
 			isa = PBXGroup;
 			children = (
+				AAA332072943FBBE00C58A2F /* GoogleService-Info.plist */,
 				AAD0F1C5292C326D0023CE16 /* Info.plist */,
 				AAD0F1E9292C38AD0023CE16 /* Models */,
 				AAD0F1EB292C38D90023CE16 /* Resources */,
@@ -354,6 +357,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAD0F1C4292C326D0023CE16 /* LaunchScreen.storyboard in Resources */,
+				AAA332082943FBBE00C58A2F /* GoogleService-Info.plist in Resources */,
 				AAD0F1C1292C326D0023CE16 /* Assets.xcassets in Resources */,
 				AAD0F1BF292C326C0023CE16 /* Main.storyboard in Resources */,
 			);
